@@ -59,3 +59,28 @@ document.querySelector('.contact-form button').addEventListener('click', (e) => 
     e.preventDefault();
     alert('Thank you for your message! I will get back to you soon.');
 });
+// ===== LIGHTBOX FUNCTIONS (GLOBAL) =====
+function openLightbox(img, caption) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxCaption = document.getElementById("lightbox-caption");
+
+    if (!lightbox || !lightboxImg || !lightboxCaption) {
+        console.error("Lightbox elements not found");
+        return;
+    }
+
+    lightboxImg.src = img.src;
+    lightboxCaption.textContent = caption;
+    lightbox.style.display = "flex";
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById("lightbox");
+    if (lightbox) lightbox.style.display = "none";
+}
+
+// ESC key close
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeLightbox();
+});
