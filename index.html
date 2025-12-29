@@ -22,12 +22,12 @@
                 </div>
             </div>
             <ul class="nav-menu">
-                <li><a href="#" class="nav-link active" data-page="home">🏠 Home</a></li>
-                <li><a href="#" class="nav-link" data-page="about">👤 About</a></li>
-                <li><a href="#" class="nav-link" data-page="resume">📄 Resume</a></li>
-                <li><a href="#" class="nav-link" data-page="portfolio">🎨 Portfolio</a></li>
-                <li><a href="#" class="nav-link" data-page="services">⚙️ Services</a></li>
-                <li><a href="#" class="nav-link" data-page="contact">✉️ Contact</a></li>
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#" class="nav-link" data-page="resume">Resume</a></li>
+                <li><a href="#" class="nav-link" data-page="portfolio">Portfolio</a></li>
+                <li><a href="#" class="nav-link" data-page="gallery">Gallery</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
             </ul>
         </aside>
 
@@ -131,12 +131,12 @@
                         <h2 style="margin-bottom: 30px; color: #1a1d23;">Education</h2>
                         <div class="resume-item">
                             <h3>Master of Computer Applications</h3>
-                            <div class="meta">2025 - 2027 | University of California</div>
+                            <div class="meta">2025 - 2027 | University of Calicut</div>
                             <p>Completed Master's degree in Fine Arts and Design with focus on UI/UX design principles and modern web development practices.</p>
                         </div>
                         <div class="resume-item">
                             <h3>Bachelor of Computer Science</h3>
-                            <div class="meta">2021 - 2024 | University of California</div>
+                            <div class="meta">2021 - 2024 | University of kerala</div>
                             <p>Graduated with honors in Computer Science with specialization in web technologies and software engineering.</p>
                         </div>
 
@@ -201,42 +201,77 @@
                 </section>
             </div>
 
-            <!-- Services Page -->
-            <div id="services" class="page">
-                <section class="portfolio-section">
-                    <h1>Services</h1>
-                    <div class="portfolio-grid">
-                        <div class="portfolio-item">
-                            <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">🎨</div>
-                            <div class="portfolio-info">
-                                <h3>UI/UX Design</h3>
-                                <p>Creating beautiful and functional user interfaces with focus on user experience.</p>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">💻</div>
-                            <div class="portfolio-info">
-                                <h3>Web Development</h3>
-                                <p>Building responsive and performant websites using modern web technologies.</p>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">📱</div>
-                            <div class="portfolio-info">
-                                <h3>Mobile Design</h3>
-                                <p>Designing mobile applications for iOS and Android platforms.</p>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <div class="portfolio-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">🎯</div>
-                            <div class="portfolio-info">
-                                <h3>Brand Identity</h3>
-                                <p>Developing comprehensive brand identities that resonate with target audiences.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+           <!-- Gallery Page -->
+<div id="gallery" class="page">
+    <section class="portfolio-section">
+        <h1>Gallery</h1>
+        <p style="margin-bottom: 40px; color: #6c757d;">
+            A collection of my work, moments, and creative explorations.
+        </p>
+
+        <div class="portfolio-grid">
+
+            <!-- Gallery Item 1 -->
+            <div class="portfolio-item">
+                <img 
+                    src="images/experience certificate.jpg"
+                    alt="Experience Certificate"
+                    style="width:100%; border-radius:12px; cursor:pointer;"
+                    onclick="openLightbox(this, 'Experience certificate – great experience working with Docking Station team')"
+                >
+                <div class="portfolio-info">
+                    <h3>Experience</h3>
+                    <p>Nice experience working with Docking Station team</p>
+                </div>
             </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="portfolio-item">
+                <img 
+                    src="images/ui-mockup.jpg"
+                    alt="UI Design Mockup"
+                    style="width:100%; border-radius:12px; cursor:pointer;"
+                    onclick="openLightbox(this, 'Early-stage UI/UX wireframe for a web application')"
+                >
+                <div class="portfolio-info">
+                    <h3>UI Design Mockup</h3>
+                    <p>Early-stage UI/UX wireframe for a web application.</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="portfolio-item">
+                <img 
+                    src="images/code-snapshot.jpg"
+                    alt="Code Snapshot"
+                    style="width:100%; border-radius:12px; cursor:pointer;"
+                    onclick="openLightbox(this, 'Python backend logic for data processing')"
+                >
+                <div class="portfolio-info">
+                    <h3>Code Snapshot</h3>
+                    <p>Python backend logic for data processing.</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="portfolio-item">
+                <img 
+                    src="images/personal-project.jpg"
+                    alt="Personal Project"
+                    style="width:100%; border-radius:12px; cursor:pointer;"
+                    onclick="openLightbox(this, 'Personal project built using HTML, CSS, and JavaScript')"
+                >
+                <div class="portfolio-info">
+                    <h3>Personal Project</h3>
+                    <p>A passion project built using HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+
 
             <!-- Contact Page -->
             <div id="contact" class="page">
@@ -271,6 +306,12 @@
 
         <div class="scroll-top" onclick="scrollToTop()">↑</div>
     </div>
+    <!-- Lightbox Modal (REQUIRED) -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" class="lightbox-img" />
+    <p id="lightbox-caption" class="lightbox-caption"></p>
+</div>
 
     <script src="script.js"></script>
 </body>
